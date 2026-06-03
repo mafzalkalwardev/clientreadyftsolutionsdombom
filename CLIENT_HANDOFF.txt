@@ -1,0 +1,44 @@
+FT Solutions Auto Dialer - Client Handoff
+========================================
+
+Built EXE:
+  release\FTSolutions_AutoDialer.exe
+
+What this app does:
+  - Uses Google Voice through embedded browser DOM/BOM JavaScript automation.
+  - Supports CSV and Excel contact lists.
+  - Writes call history to logs\call_logs.csv and the local CRM database.
+  - Has old-style controls: Start Dialing, X / Next Dial, Stop.
+
+Admin setup before giving to client:
+  1. Run FTSolutions_AutoDialer.exe on your admin PC.
+  2. Create the first administrator account.
+  3. Go to Settings > Add account.
+  4. Add the Google Voice line and choose "Connect now in visible browser".
+  5. Complete Google login/2FA in the visible browser window.
+  6. Confirm the Live Calls line shows Ready.
+  7. Go to Administration > Export client package.
+  8. Create the client's agent login email/password.
+
+Give the client:
+  - release\FTSolutions_AutoDialer.exe
+  - The exported client package contents:
+      dialer_config.json
+      logs\
+      data\
+      chrome_profiles\
+
+Client install:
+  1. Put FTSolutions_AutoDialer.exe in a folder such as C:\FTSolutions\AutoDialer.
+  2. Copy the exported package contents into the same folder.
+  3. Run FTSolutions_AutoDialer.exe.
+  4. Client signs in with the agent email/password you created.
+
+Client contact list format:
+  CSV or Excel with a phone column named one of:
+    Phone, Mobile, Number, Tel, Telephone, Cell, Phone Number
+  Optional name column:
+    Name, Full Name, Contact Name
+
+Do not send your admin logs, data, or chrome_profiles folders unless they were
+created by Administration > Export client package for that specific client.

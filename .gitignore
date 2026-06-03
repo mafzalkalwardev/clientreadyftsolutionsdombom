@@ -1,0 +1,14 @@
+build/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+logo.ico
+call_logs.csv
+.codegraph/
+*.spec.bak
+Archive_OldProjects/
+chrome_profiles/
+logs/
+data/gv_accounts.json
+phones_test.xlsx
