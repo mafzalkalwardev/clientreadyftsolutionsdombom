@@ -97,3 +97,8 @@ Optional name column:
 ```text
 Name, Full Name, Contact Name
 ```
+
+## Screenshots
+
+![clientreadyftsolutionsdombom dashboard](docs/screenshots/app.png)
+
